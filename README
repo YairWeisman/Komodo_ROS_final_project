@@ -1,0 +1,33 @@
+activate robot through ssh:
+    ssh komodo@192.168.0.100
+    export ROS_IP="192.168.0.100"
+    roslaunch robotican_komodo komodo_bringup.launch
+
+run script:
+    export ROS_MASTER_URI="http://192.168.0.100:11311"
+    export ROS_IP="192.168.0.102"
+    cd catkin_ws/src/assign2 $SCRIPT 
+SCRIPTS:
+    manager.py
+    forwardListener.py
+    distanceListener.py
+    turnListener.py
+    findredListener.py
+    
+ORIGINAL   
+ 
+activate robot through ssh:
+    ssh komodo@192.168.0.100
+    export ROS_IP="192.168.0.100"
+    roslaunch robotican_komodo komodo_bringup.launch
+
+run script:
+    export ROS_MASTER_URI="http://192.168.0.100:11311"
+    export ROS_IP="192.168.0.101"
+    cd catkin_ws/src/assign2 $SCRIPT 
+SCRIPTS:
+    manager.py
+    forwardListener.py
+    distanceListener.py
+    turnListener.py
+    findredListener.py
